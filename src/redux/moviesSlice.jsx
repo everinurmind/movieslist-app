@@ -4,15 +4,6 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 const apiKey = '43f6e36cafa8a53b2e6d7e6c4ae05d7d';
 const baseUrl = 'https://api.themoviedb.org/3';
 
-export const fetchMovies = createAsyncThunk(
-  'movies/allMovies',
-  async () => {
-    const response = await fetch(`${baseUrl}/movie?api_key=${apiKey}`);
-    const data = await response.json();
-    return data.results;
-  },
-);
-
 export const fetchTopRatedMovies = createAsyncThunk(
   'movies/topRated',
   async () => {
@@ -84,9 +75,6 @@ const moviesSlice = createSlice({
       })
       .addCase(fetchMovieDetails.fulfilled, (state, action) => {
         state.movieDetails = action.payload;
-      })
-      .addCase(fetchMovies.fulfilled, (state, action) => {
-        state.allMovies = action.payload;
       });
   },
 });
