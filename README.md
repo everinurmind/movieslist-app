@@ -53,7 +53,7 @@ Hello! Here you will see my Movies-List-App.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](will add after deployment)
+- [Live Demo Link](https://movieslist-app.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
