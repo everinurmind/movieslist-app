@@ -1,44 +1,31 @@
-.home {
-  padding: 20px;
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
 }
 
-input[type="text"] {
-  padding: 10px;
-  margin-bottom: 20px;
-  width: 100%;
-  max-width: 500px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    width: 720px;
+    margin: 0 auto;
+  }
 }
 
-.links {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    width: 540px;
+    margin: 0 auto;
+  }
 }
 
-.links a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.links a:hover {
-  background-color: #f0f0f0;
-}
-
-.movie-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.movie-list li {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 10px;
+/* Extra small devices (portrait phones, 575.98px and below) */
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
