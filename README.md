@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b> Bookstore README</b></h3>
+  <h3><b>Movies List App ReadMe</b></h3>
 
 </div>
 
@@ -24,9 +24,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Movies-React-App <a name="about-project"></a>
+# 📖 Movies-List-App <a name="about-project"></a>
 
-Hello! Here you will see my Movies-React-App.
+Hello! Here you will see my Movies-List-App.
 
 ## 🛠 Built With HTML, CSS and JS <a name="built-with"></a>
 
@@ -60,8 +60,8 @@ Node
 ### Setup
 ```
 cd my-folder
-git clone git@github.com/everinurmind/movies-react-app.git
-cd movies-react-app
+git clone git@https://github.com/everinurmind/movieslist-app.git
+cd movieslist-app
 ```
 ### Install
 ```
@@ -96,7 +96,7 @@ npm test
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/everinurmind/movies-react-app/issues).
+Feel free to check the [issues page](https://github.com/everinurmind/movieslist-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
