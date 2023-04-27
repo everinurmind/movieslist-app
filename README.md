@@ -9,7 +9,10 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-- [🛠 Built With](#built-with)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+- [🚀 Live Demo](#live-demo)
+- [🎥 Loom Walkthrough](#loom-walkthrough)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -45,6 +48,20 @@ Hello! Here you will see my Movies-List-App.
     <li><a href="https://github.com/">GitHub</a></li>
   </ul>
 </details>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](will add after deployment)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🎥 Loom Walkthrough <a name="loom-walkthrough"></a>
+
+- coming soon...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
