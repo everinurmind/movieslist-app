@@ -2,14 +2,17 @@
 
 <div align="center">
 
-  <h3><b> Bookstore README</b></h3>
+  <h3><b>Movies List App ReadMe</b></h3>
 
 </div>
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-- [🛠 Built With](#built-with)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+- [🚀 Live Demo](#live-demo)
+- [🎥 Loom Walkthrough](#loom-walkthrough)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -24,9 +27,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Movies-React-App <a name="about-project"></a>
+# 📖 Movies-List-App <a name="about-project"></a>
 
-Hello! Here you will see my Movies-React-App.
+Hello! Here you will see my Movies-List-App.
 
 ## 🛠 Built With HTML, CSS and JS <a name="built-with"></a>
 
@@ -46,6 +49,20 @@ Hello! Here you will see my Movies-React-App.
   </ul>
 </details>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](will add after deployment)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🎥 Loom Walkthrough <a name="loom-walkthrough"></a>
+
+- [Loom Walkthrough Link](https://www.loom.com/share/e8afc5c316bd4ac081835c9eb864f4d8)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -60,8 +77,8 @@ Node
 ### Setup
 ```
 cd my-folder
-git clone git@github.com/everinurmind/movies-react-app.git
-cd movies-react-app
+git clone git@https://github.com/everinurmind/movieslist-app.git
+cd movieslist-app
 ```
 ### Install
 ```
@@ -96,7 +113,7 @@ npm test
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/everinurmind/movies-react-app/issues).
+Feel free to check the [issues page](https://github.com/everinurmind/movieslist-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

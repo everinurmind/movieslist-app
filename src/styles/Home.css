@@ -1,0 +1,28 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.links a {
+  display: block;
+  width: 200px;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.links a:hover {
+  background-color: #e0e0e0;
+}

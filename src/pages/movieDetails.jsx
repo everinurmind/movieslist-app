@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams, useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import { fetchMovieDetails } from '../redux/moviesSlice';
+import '../styles/Details.css';
 
 function Details() {
   const { id } = useParams();

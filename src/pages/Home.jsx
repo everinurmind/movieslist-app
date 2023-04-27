@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {
@@ -7,6 +7,7 @@ import {
   fetchNowPlayingMovies,
   fetchPopularMovies,
 } from '../redux/moviesSlice';
+import '../styles/Home.css';
 
 function Home() {
   const dispatch = useDispatch();

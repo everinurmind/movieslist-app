@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import { fetchTopRatedMovies } from '../redux/moviesSlice';
+import '../styles/Components.css';
 
 function TopRatedMovies() {
   const dispatch = useDispatch();
