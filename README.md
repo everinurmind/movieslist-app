@@ -59,7 +59,7 @@ Hello! Here you will see my Movies-List-App.
 
 ## 🎥 Loom Walkthrough <a name="loom-walkthrough"></a>
 
-- coming soon...
+- [Loom Walkthrough Link](https://www.loom.com/share/e8afc5c316bd4ac081835c9eb864f4d8)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
