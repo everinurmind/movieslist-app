@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
-import Details from './pages/MovieDetails';
-import TVShowDetails from './pages/TVShowDetails';
+import Details from './pages/movieDetails';
+import TVShowDetails from './pages/tvShowDetails';
 import TopRatedMovies from './components/TopRatedMovies';
 import UpcomingMovies from './components/UpcomingMovies';
 import NowPlayingMovies from './components/NowPlayingMovies';
