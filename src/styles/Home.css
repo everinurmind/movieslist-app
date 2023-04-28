@@ -1,99 +1,55 @@
-.home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  background-color: #daa520;
-}
-
 .links-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 5px;
-  width: 100%;
-  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
 }
 
 .link {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: #f5deb3;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--accent-color-2);
+  border-radius: 1.5rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  width: calc(25% - 2rem);
+  height: 50vh;
+  cursor: default;
 }
 
-.link:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+.link h5 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary-color);
 }
 
-.links-container a {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  text-decoration: none;
-  color: #2d2d2d;
-  font-size: 38px;
+.link .circle {
+  font-size: 3rem;
+  color: var(--accent-color-1);
+  margin-top: 1rem;
 }
 
-.circle:hover {
-  transform: scale(1.1);
-}
-
-@media screen and (max-width: 768px) {
-  .links-container {
-    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-    grid-gap: 1px;
-  }
-
-  .link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-  }
-
-  .links-container a {
-    font-size: 24px;
-  }
+.link .circle:hover {
+  color: var(--accent-color-3);
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
   .links-container {
-    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-    grid-gap: 1px;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-  }
-
-  .links-container a {
-    font-size: 24px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .links-container {
-    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-    grid-gap: 1px;
-  }
-
-  .link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-  }
-
-  .links-container a {
-    font-size: 24px;
+    width: 100%;
+    height: auto;
+    max-width: none;
+    margin: 1rem 0;
   }
 }

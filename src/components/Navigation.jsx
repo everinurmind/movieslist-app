@@ -1,6 +1,8 @@
+import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaChevronLeft } from 'react-icons/fa';
 import TVShowList from './tvShowsList';
+import logo from '../assets/film-reel.png';
 import '../styles/Navigation.css';
 
 const Navigation = () => {
@@ -12,9 +14,12 @@ const Navigation = () => {
 
   return (
     <header className="navigation">
-      <Link to="/">
-        <FaChevronLeft onClick={handleReturn} aria-label="Go back" />
-      </Link>
+      <div className="header-logo">
+        <Link to="/">
+          <FaChevronLeft onClick={handleReturn} aria-label="Go back" />
+        </Link>
+        <img src={logo} alt="Logo" />
+      </div>
       <TVShowList />
     </header>
   );

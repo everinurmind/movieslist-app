@@ -1,57 +1,124 @@
-.tv-show-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* Color palette */
+:root {
+  --primary-color: #1a2b42;
+  --secondary-color: #b7c0ca;
+  --accent-color-1: #f95d6a;
+  --accent-color-2: #ff7b54;
+  --accent-color-3: #ffb900;
 }
 
-.tv-show-list li {
-  border-bottom: 1px solid #f5deb3;
-  padding: 10px;
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
 }
 
 input[type="text"] {
-  display: block;
-  margin: 20px auto;
-  padding: 10px;
-  border: 1px solid #f5deb3;
-  border-radius: 5px;
-  width: 90%;
-  max-width: 400px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  width: 100%;
+  max-width: 20rem;
 }
 
-@media (min-width: 768px) {
-  .tv-show-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Search container */
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Loading message */
+.loading {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Error message */
+.error {
+  display: flex;
+  justify-content: center;
+  color: var(--accent-color-1);
+  margin-top: 1rem;
+}
+
+/* TV show grid */
+.tv-show-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+/* TV show card */
+.tv-show-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color-1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.tv-show-card:hover {
+  background-color: var(--accent-color-3);
+}
+
+.tv-show-card h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  /* TV show grid */
+  .tv-show-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* TV show grid */
+  .tv-show-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
-  .tv-show-list li {
-    border: none;
-    flex-basis: 30%;
-    margin-bottom: 20px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .tv-show-list li:hover {
-    transform: translateY(-10px);
-  }
-
-  .tv-show-list li a {
-    display: block;
-    color: #2d2d2d;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-
-  input[type="text"] {
-    margin: 20px 0;
-    width: 60%;
-    max-width: 600px;
+  /* TV show card */
+  .tv-show-card h3 {
+    font-size: 1rem;
   }
 }

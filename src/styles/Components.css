@@ -1,82 +1,83 @@
 .categories-container {
+  display: flex;
+  flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
-  background-color: #f5deb3;
+  padding: 20px 20px;
+  align-items: center;
+  justify-content: center;
 }
 
-.categories-container h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
+h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
 }
 
-.categories-container ul {
+ul {
+  list-style: none;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
+  gap: 10px;
 }
 
-.categories-container li {
-  width: calc(25% - 10px);
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.categories-container li a {
-  position: relative;
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc(25% - 10px);
+  background-color: var(--accent-color-2);
+  margin-bottom: 20px;
+  border-radius: 1.5rem;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+li a {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: var(--primary-color);
   text-decoration: none;
-  color: #2d2d2d;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.categories-container li a img {
-  width: 100%;
+li img {
+  width: 200px;
   height: auto;
-  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+  border-radius: 1.5rem;
 }
 
-.categories-container li a svg {
-  position: absolute;
-  bottom: 50px;
-  left: 210px;
-  width: 40px;
-  height: 40px;
-  fill: #f5deb3;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
+li h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
-.categories-container li a:hover svg {
-  opacity: 1;
-}
-
-@media screen and (max-width: 1024px) {
-  .categories-container ul {
+@media (max-width: 768px) {
+  ul {
     justify-content: center;
   }
 
-  .categories-container li {
-    width: calc(33.33% - 10px);
+  li {
+    flex-basis: calc(50% - 10px);
   }
 }
 
-@media screen and (max-width: 768px) {
-  .categories-container ul {
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .categories-container li {
-    width: 250px;
+@media (max-width: 480px) {
+  li {
+    flex-basis: 100%;
   }
 
-  .categories-container ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
+  li img {
+    height: 200px;
   }
 }
