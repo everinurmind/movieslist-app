@@ -1,0 +1,124 @@
+/* Color palette */
+:root {
+  --primary-color: #1a2b42;
+  --secondary-color: #b7c0ca;
+  --accent-color-1: #f95d6a;
+  --accent-color-2: #ff7b54;
+  --accent-color-3: #ffb900;
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  width: 100%;
+  max-width: 20rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Search container */
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Loading message */
+.loading {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Error message */
+.error {
+  display: flex;
+  justify-content: center;
+  color: var(--accent-color-1);
+  margin-top: 1rem;
+}
+
+/* TV show grid */
+.tv-show-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+/* TV show card */
+.tv-show-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color-1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.tv-show-card:hover {
+  background-color: var(--accent-color-3);
+}
+
+.tv-show-card h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  /* TV show grid */
+  .tv-show-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* TV show grid */
+  .tv-show-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  /* TV show card */
+  .tv-show-card h3 {
+    font-size: 1rem;
+  }
+}
