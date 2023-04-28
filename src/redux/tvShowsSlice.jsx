@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const apiKey = '43f6e36cafa8a53b2e6d7e6c4ae05d7d';
@@ -31,12 +30,14 @@ const tvShowsSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchPopularTVShows.fulfilled, (state, action) => {
-        state.popularTVShows = action.payload;
-      })
-      .addCase(fetchTVShowDetails.fulfilled, (state, action) => {
-        state.tvShowDetails = action.payload;
-      });
+      .addCase(fetchPopularTVShows.fulfilled, (state, action) => ({
+        ...state,
+        popularTVShows: action.payload,
+      }))
+      .addCase(fetchTVShowDetails.fulfilled, (state, action) => ({
+        ...state,
+        tvShowDetails: action.payload,
+      }));
   },
 });
 
