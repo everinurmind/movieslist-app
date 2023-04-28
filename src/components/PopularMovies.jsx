@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { FaArrowLeft } from 'react-icons/fa';
+import { FaArrowCircleRight } from 'react-icons/fa';
 import { fetchPopularMovies } from '../redux/moviesSlice';
 import '../styles/Components.css';
 
@@ -16,16 +16,14 @@ function PopularMovies() {
 
   return (
     <div className="categories-container">
-      <div className="header-container">
-        <h2>Popular Movies</h2>
-        <Link to="/"><FaArrowLeft /></Link>
-      </div>
+      <h2>Popular Movies</h2>
       <ul>
         {popularMovies.map((movie) => (
           <li key={movie.id}>
             <Link to={`/movies/${movie.id}`}>
               <img src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`} alt={`${movie.title} poster`} />
               {movie.title}
+              <FaArrowCircleRight className="circle" />
             </Link>
           </li>
         ))}

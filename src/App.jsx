@@ -11,7 +11,7 @@ import './styles/App.css';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Navigation />
       <Routes>
         <Route exact path="/" element={<Home />} />

@@ -1,28 +1,99 @@
 .home {
   display: flex;
-  flex-direction: column;
-  padding: 1rem;
-}
-
-.links {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  height: 100%;
+  background-color: #daa520;
 }
 
-.links a {
-  display: block;
-  width: 200px;
-  padding: 1rem;
-  background-color: #f5f5f5;
-  color: #000;
-  text-align: center;
+.links-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5px;
+  width: 100%;
+  height: 100vh;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5deb3;
+}
+
+.link:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.links-container a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   text-decoration: none;
-  border-radius: 5px;
-  transition: all 0.2s ease-in-out;
+  color: #2d2d2d;
+  font-size: 38px;
 }
 
-.links a:hover {
-  background-color: #e0e0e0;
+.circle:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .links-container {
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    grid-gap: 1px;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .links-container a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .links-container {
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    grid-gap: 1px;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .links-container a {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .links-container {
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    grid-gap: 1px;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .links-container a {
+    font-size: 24px;
+  }
 }

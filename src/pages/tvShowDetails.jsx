@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useParams, useNavigate } from 'react-router-dom';
-import { FaArrowLeft } from 'react-icons/fa';
+import { useParams } from 'react-router-dom';
 import { fetchTVShowDetails } from '../redux/tvShowsSlice';
 import '../styles/Details.css';
 
@@ -14,18 +13,9 @@ const TVShowDetails = () => {
     dispatch(fetchTVShowDetails(tvShowId));
   }, [dispatch, tvShowId]);
 
-  const navigate = useNavigate();
-
-  const handleReturn = () => {
-    navigate(-1);
-  };
-
   return (
     <div className="container">
-      <div className="title">
-        <h2>{tvShow.name}</h2>
-        <button type="button" onClick={handleReturn} aria-label="Go back"><FaArrowLeft /></button>
-      </div>
+      <h2>{tvShow.name}</h2>
       {tvShow.id && (
       <div className="tvShow-info">
         <img src={`https://image.tmdb.org/t/p/w185${tvShow.poster_path}`} alt={`${tvShow.name} poster`} />

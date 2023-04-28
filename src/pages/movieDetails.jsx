@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams, useNavigate } from 'react-router-dom';
-import { FaArrowLeft } from 'react-icons/fa';
+import { useParams } from 'react-router-dom';
 import { fetchMovieDetails } from '../redux/moviesSlice';
 import '../styles/Details.css';
 
@@ -14,18 +13,9 @@ function Details() {
     dispatch(fetchMovieDetails(id));
   }, [dispatch, id]);
 
-  const navigate = useNavigate();
-
-  const handleReturn = () => {
-    navigate(-1);
-  };
-
   return (
     <div className="container">
-      <div className="title">
-        <h2>{movie.title}</h2>
-        <button type="button" onClick={handleReturn} aria-label="Go back"><FaArrowLeft /></button>
-      </div>
+      <h2>{movie.title}</h2>
       {movie.id && (
       <div className="movie-info">
         <img src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`} alt={`${movie.title} poster`} />

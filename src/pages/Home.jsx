@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { FaArrowCircleRight } from 'react-icons/fa';
 import {
   fetchTopRatedMovies,
   fetchUpcomingMovies,
@@ -21,11 +22,23 @@ function Home() {
 
   return (
     <div className="home">
-      <div className="links">
-        <Link to="/popular-movies">Popular Movies</Link>
-        <Link to="/top-rated-movies">Top Rated Movies</Link>
-        <Link to="/now-playing-movies">Now Playing Movies</Link>
-        <Link to="/upcoming-movies">Upcoming Movies</Link>
+      <div className="links-container">
+        <Link to="/popular-movies" className="link">
+          <h5>Popular Movies</h5>
+          <FaArrowCircleRight className="circle" />
+        </Link>
+        <Link to="/top-rated-movies" className="link">
+          <h5>Top Rated Movies</h5>
+          <FaArrowCircleRight className="circle" />
+        </Link>
+        <Link to="/now-playing-movies" className="link">
+          <h5>Now Playing Movies</h5>
+          <FaArrowCircleRight className="circle" />
+        </Link>
+        <Link to="/upcoming-movies" className="link">
+          <h5>Upcoming Movies</h5>
+          <FaArrowCircleRight className="circle" />
+        </Link>
       </div>
     </div>
   );

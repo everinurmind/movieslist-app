@@ -1,63 +1,86 @@
 .container {
-  margin: 0 auto;
-  padding: 30px;
   max-width: 1200px;
-}
-
-@media only screen and (max-width: 768px) {
-  .container {
-    padding: 20px;
-  }
+  margin: 0 auto;
+  padding: 0 16px;
+  background-color: #f5deb3;
 }
 
 .title {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  font-size: 24px;
 }
 
-@media only screen and (max-width: 768px) {
-  .title {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 10px;
-  }
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
 
-  h2 {
-    margin-bottom: 10px;
-  }
+button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+button:focus {
+  outline: none;
 }
 
 .movie-info {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  margin-bottom: 48px;
 }
 
-@media only screen and (max-width: 768px) {
-  .movie-info {
-    flex-direction: column;
-    align-items: center;
-  }
+.movie-info img {
+  width: 185px;
+  height: 278px;
+  object-fit: cover;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  border-radius: 10px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  margin-right: 20px;
-}
-
-@media only screen and (max-width: 768px) {
-  img {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
+.movie-info-text {
+  flex: 1;
+  font-size: 16px;
 }
 
 .movie-info-text p {
-  margin: 0;
+  margin-bottom: 16px;
 }
 
-.movie-info-text p:not(:last-child) {
-  margin-bottom: 10px;
+@media (max-width: 767px) {
+  .container {
+    padding: 0 8px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  button {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .movie-info img {
+    width: 120px;
+    height: 180px;
+    margin-right: 16px;
+  }
+
+  .movie-info-text {
+    font-size: 14px;
+  }
 }

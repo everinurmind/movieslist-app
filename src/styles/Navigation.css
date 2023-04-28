@@ -1,28 +1,20 @@
 .navigation {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
-  background-color: #e8e8e8;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #daa520;
 }
 
-.navigation img {
-  width: 2.5rem;
-  height: auto;
+.navigation a {
+  text-decoration: none;
+  color: #2d2d2d;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .navigation {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navigation img {
-    margin-bottom: 1rem;
-  }
-
-  .navigation input[type="text"] {
-    width: 100%;
-    margin-bottom: 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
