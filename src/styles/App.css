@@ -1,13 +1,13 @@
 :root {
-  --primary-color: #444545;
+  --primary-color: #403d40;
   --secondary-color: #b7c0ca;
   --accent-color-1: #f0e4b7;
-  --accent-color-2: #9f440792;
+  --accent-color-2: #a79365;
   --accent-color-3: #74716f;
 }
 
 .App {
-  background-color: var(--accent-color-1);
+  background-color: var(--primary-color);
 }
 
 @media (min-width: 992px) {
