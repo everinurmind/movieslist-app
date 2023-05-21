@@ -18,7 +18,7 @@ const Navigation = () => {
         <Link to="/">
           <FaChevronLeft onClick={handleReturn} aria-label="Go back" />
         </Link>
-        <img src={logo} alt="Logo" />
+        <img src={logo} alt="Logo" className="logo-image" />
       </div>
       <TVShowList />
     </header>
